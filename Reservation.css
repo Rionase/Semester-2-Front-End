@@ -1,0 +1,397 @@
+body{
+    background-image: url(Image/Reservation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Main1 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 40px;
+    font-size: 17px;
+    background-color: rgb(41, 41, 41);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 10000;
+}
+
+
+.navtext {
+    color: white !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navtext {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+  
+.navtext:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navtext:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+#gambar1 {
+    height: 600px;
+}
+
+#logo {
+    margin-left: 30px;
+    height: 50px;
+    width:  50px;
+    margin-right: 10px;
+}
+
+.logoname {
+    margin-right: auto;
+    margin-left: 0px;
+    font-size: 17px;
+    color: white !important;
+    margin-top: 5px;
+    font-family: 'Signika', sans-serif;
+}
+
+#Main2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+
+
+}
+
+#judul {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin-top: 30px;
+}
+
+#below_judul1 {
+    width: 597.56px;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 5px;
+    margin-top: -25px;
+}
+
+#below_judul2 {
+    width: 597.56px;
+    height: 5px;
+    background-color: white;
+}
+
+
+#Main3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+#SideImage {
+    width: 400px;
+    height: 317.26px;
+    margin-right: 80px;
+}
+
+#right {
+    width: 450px;
+}
+
+
+.question {
+    width: 400px;
+}
+.time {
+    max-width: 175px;
+    min-width: 175px;
+    margin-left: 25px;
+}
+
+.date {
+    max-width: 200px;
+    min-width: 200px;
+}
+
+
+.transition, .question_title, .box {
+    -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    -o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    -webkit-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+}
+form {
+    font-family: Helvetica, sans-serif;
+    font-weight: light;
+    -webkit-font-smoothing: antialiased;
+}
+.question{
+    margin-bottom: 40px;
+  }
+.question_title {
+    transform-origin: left center;
+    color: rgb(181,225,238);
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    font-size: 17px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    display: block;
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 12px;
+    z-index: 2;
+    pointer-events: none;
+}
+.box {
+    appearance: none;
+    background-color: none;
+    border: 1px solid rgb(219,110,255);
+    line-height: 0;
+    font-size: 17px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 12px 30px;
+    border-radius: 60px;
+    /* Untuk Isi saat ketik */
+    color: rgb(255, 195, 255);
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+
+
+.box:focus {
+    outline: none;
+    /* untuk merubah warna background input saat diclick */
+    background :rgb(219,110,255);
+    color: white;
+    margin-top: 30px;
+}
+.box:valid {
+    margin-top: 30px;
+}
+.box:focus ~ label {
+    /* Naikkan angka minusnya utk menambah jarak label saat input ditekan */
+    -moz-transform: translate(0, -40px);
+    -ms-transform: translate(0, -40px);
+    -webkit-transform: translate(0, -40px);
+    transform: translate(0, -40px);
+}
+.box:valid ~ label {
+    text-transform: uppercase;
+    font-style: italic;
+    -moz-transform: translate(5px, -35px) scale(0.6);
+    -ms-transform: translate(5px, -35px) scale(0.6);
+    -webkit-transform: translate(5px, -35px) scale(0.6);
+    transform: translate(5px, -35px) scale(0.6);
+}
+
+#Main4 {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="time"],[type="date"]{
+    line-height: 1 !important;
+}
+input[type=time]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=time]:focus::-webkit-datetime-edit {
+    color: white !important;
+}
+input[type="date"]:focus::-webkit-datetime-edit {
+    color: white !important;
+}
+
+#Main5 {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.choice {
+    margin-right: 70px;
+}
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+	color: #FFF;
+	text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+	height: 450%;
+}
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+a.animated-button.victoria-one {
+	border: 2px solid rgb(219,110,255);
+}
+a.animated-button.victoria-one:after {
+	background: rgb(219,110,255);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+a.animated-button.victoria-two {
+	border: 2px solid rgb(219,110,255);
+}
+a.animated-button.victoria-two:after {
+	background: rgb(219,110,255);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+a.animated-button.victoria-four {
+	border: 2px solid rgb(219,110,255);
+}
+a.animated-button.victoria-four:after {
+	background: rgb(219,110,255);
+	opacity: .5;
+	-moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	-ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	-webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	transform: translateY(-50%) translateX(-50%) rotate(90deg);
+}
+a.animated-button.victoria-four:hover:after {
+	opacity: 1;
+	height: 600% !important;
+}
+
+#headline {
+    height: 75px;
+    width: 300px;
+    margin-top: 50px;
+}
+
+#closing {
+    width: 300px;
+    margin-top: 10px;
+}
+
+
+#region_title{
+    font-family: 'Italiana', serif;
+    color : rgb(173, 116, 96);
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.food_course {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.Name {
+    font-family: 'Italiana', serif;
+    color: goldenrod;
+    margin-top: -25px;
+    font-size: 25px;
+}
+
+.button {
+    background-color: transparent;
+    padding: 13px 40px 13px 40px;
+    border: 2px solid rgb(219,110,255);
+    color:rgb(219,110,255);
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    border-radius: 1000px;
+
+    transition: all 0.3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.button:hover {
+    color: rgb(255, 195, 255);
+    background-color: rgb(138,86,230);
+    border-color: rgb(90, 91, 158);
+}

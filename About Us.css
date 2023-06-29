@@ -1,0 +1,250 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Main1 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 40px;
+    font-size: 17px;
+    background-color: rgb(41, 41, 41);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+
+.navtext {
+    color: white !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navtext {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+  
+.navtext:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navtext:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+#gambar1 {
+    height: 600px;
+}
+
+#logo {
+    margin-left: 30px;
+    height: 50px;
+    width:  50px;
+    margin-right: 10px;
+}
+
+.logoname {
+    margin-right: auto;
+    margin-left: 0px;
+    font-size: 17px;
+    color: white !important;
+    margin-top: 5px;
+    font-family: 'Signika', sans-serif;
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.img-fluid {
+    width: 400px;
+    height: 170;
+    margin-left: 33%;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+@media (min-width: 992px) {
+    .about-heading .about-heading-img {
+      position: relative;
+      z-index: 0;
+    }
+    .about-heading .about-heading-content {
+      margin-top: -5rem;
+      position: relative;
+      z-index: 1;
+    }
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.col-xl-9 {
+    flex: 0 0 auto;
+    width: 75%;
+}
+
+.col-lg-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+}
+
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.bg-faded {
+    background-color: rgba(219,110,255) ;
+}
+
+.section-heading {
+    text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+    display: block;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.section-heading .section-heading-lower {
+    display: block;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.rounded {
+    border-radius: 0.25rem !important;
+}
+  
+.rounded-circle {
+    border-radius: 50% !important;
+    border: rgba(255,195,255) 3px solid;
+}
+  
+.p-5 {
+    padding: 3rem !important;
+}
+
+.section-heading {
+    text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+    display: block;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.section-heading .section-heading-lower {
+    display: block;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mb-lg-0 {
+    margin-bottom: 0 !important;
+}
+
+.page-section {
+    margin-top: -20px;
+    margin-bottom: 5rem;
+}
+
+/* rgba(175,88,203) */
+
+
+.cta {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: rgba(230, 167, 86, 0.9);
+}
+.cta .cta-inner {
+    padding: 3rem;
+    margin: 0.5rem;
+}
+
+.cta .cta-inner:before {
+    border-radius: 0.5rem;
+    content: "";
+    top: -0.5rem;
+    bottom: -0.5rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    z-index: -1;
+}
+
+.jarak{
+    height: 60px;
+}
+
+
+.Last {
+    background-color: rgb(41, 41, 41) !important;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    color: rgba(255,195,255);
+    font-family: 'Mulish', sans-serif;
+}
+
+.info_logo {
+    width: 30px;
+    margin-right: 8px;
+}
+
+.three{
+    width: 25px;
+    margin-left: 5px;
+}
+
+#top{
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.Main4{
+    margin-bottom: 20px;
+}

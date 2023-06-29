@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Reservation</title>
+        <link rel="stylesheet" type="text/css" href="Reservation.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body id="body">
+      <ul class="nav justify-content-end Main1">
+          <img src="Image/logo 2.png" id="logo">
+          <div class="nav-link logoname">Royal Trinité</div>
+          <li class="nav-item">
+            <a class="nav-link navtext" href="Welcome Page.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navtext" href="Menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navtext" href="#">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navtext" href="About Us.html">About Us</a>
+          </li>
+      </ul>
+
+      <br><br><br>
+
+      <form>
+      <div id="Main2">
+        <p id="judul">MAKE A RESERVATION</p>
+        <div id="below_judul1"></div>
+        <div id="below_judul2"></div>
+        <div id="Main3">
+          <img src="Image/Reservation Side Image.png" alt="" id="SideImage">
+          <div id="right">
+
+              <div class="question">
+                <input type="text" class="box" required/>
+                <label class="question_title">Reservation on behalf of</label>
+              </div>
+
+              <div class="question">
+                <input type="tel" class="box" required/>
+                <label class="question_title">Active Phone Number</label>
+              </div>
+
+              <div class="question">
+                <input type="text" class="box" required/>
+                <label class="question_title">Email Address</label>
+              </div>
+              
+              <div id="Main4">
+
+                <div class="question date">
+                  <input type="date" class="box" required/>
+                  <label class="question_title">Date</label>
+                </div>
+
+                <div class="question time">
+                  <input type="time" class="box" required/>
+                  <label class="question_title">Time</label>
+                </div>
+  
+              </div>
+          </div>
+        </div>
+        
+        <div id="Main5">
+
+          <div class="col-md-3 col-sm-3 col-xs-6 choice" id="one"> 
+            <a href="#one" class="btn btn-sm animated-button victoria-one"  onclick="Ganti('Italy')">ITALIAN</a> 
+          </div>
+
+          <div class="col-md-3 col-sm-3 col-xs-6 choice" id="two"> 
+            <a href="#two" class="btn btn-sm animated-button victoria-four"  onclick="Ganti('Japan')">JAPANESE</a> 
+          </div>
+
+          <div class="col-md-3 col-sm-3 col-xs-6 choice" id="three"> 
+            <a href="#three" class="btn btn-sm animated-button victoria-two"  onclick="Ganti('France')">FRENCH</a> 
+          </div>
+
+        </div>
+
+        <img src="Image/Header.png" alt="" id="headline">
+        <p id="region_title">Italian</p>
+        <p class="food_course">Wine Pairing</p>
+        <p class="Name">Crémant de Limoux</p>
+        <p class="food_course">Appetizer</p>
+        <p class="Name">Crostini</p>
+        <p class="food_course">Entrée</p>
+        <p class="Name">Tortelli</p>
+        <p class="food_course">Main Dish</p>
+        <p class="Name">Coniglio alla griglia</p>
+        <p class="food_course">Desert</p>
+        <p class="Name">Tiramisu</p>
+        <img src="Image/Closing.png" alt="" id="closing">
+
+        <button class="button" onclick="Submit()">SUBMIT</button>
+
+      </div></form>
+      
+      <script src="Reservation.js"></script>
+    </body>
+</html>

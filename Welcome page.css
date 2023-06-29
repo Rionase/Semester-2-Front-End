@@ -1,0 +1,196 @@
+body{
+    background-image: url(Image/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: 0.5s;
+}
+
+.Main1 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 40px;
+    font-size: 17px;
+    background-color: rgb(41, 41, 41);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+
+.navtext {
+    color: white !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navtext {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+  
+.navtext:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navtext:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+#gambar1 {
+    height: 600px;
+}
+
+#logo {
+    margin-left: 30px;
+    height: 50px;
+    width:  50px;
+    margin-right: 10px;
+}
+
+.logoname {
+    margin-right: auto;
+    margin-left: 0px;
+    font-size: 17px;
+    color: white !important;
+    margin-top: 5px;
+    font-family: 'Signika', sans-serif;
+}
+
+#Main2 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 145px;
+    font-family: 'Signika', sans-serif;
+    color: white;
+    
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+#image1 {
+    width: 100px;
+}
+
+#text1 {
+    font-size: 40px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#text2 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+#location {
+    font-weight: lighter;
+}
+
+#Main3{
+    margin-top: 112px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(26, 25, 25, 0.562);
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.contact{
+    width: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.button {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: rgb(90, 91, 158);
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-decoration: none;
+    border: #fff 2px solid;
+  }
+  .button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 204, 255, 0);
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  .button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #4500b39c;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  .button:hover {
+    color: rgb(255, 255, 255);
+  }
+  .button:hover:before {
+    width: 100%;
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

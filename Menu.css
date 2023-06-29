@@ -1,0 +1,186 @@
+body{
+    background-image: url(Image/Italy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: 0.5s;
+}
+
+
+.Main1 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 40px;
+    font-size: 17px;
+    background-color: rgb(41, 41, 41);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.navtext {
+    color: white !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navtext {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.navtext:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navtext:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#logo {
+    margin-left: 30px;
+    height: 50px;
+    width:  50px;
+    margin-right: 10px;
+}
+
+.logoname {
+    margin-right: auto;
+    margin-left: 0px;
+    font-size: 17px;
+    color: white !important;
+    margin-top: 5px;
+    font-family: 'Signika', sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    z-index: 1;
+    top: 64px;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 10px;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.7), rgba(245, 245, 245, 0.7));
+}
+
+.text1 {
+    display:flex;
+    flex-direction: column;
+    transform: rotate(90deg);
+    margin-top: -21px;
+    font-size: 23px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+.top {
+    margin-top: 5px;;
+}
+.bottom {
+    margin-bottom: 5px;
+}
+
+.buttonstyle {
+    color: whitesmoke;
+    background-color: goldenrod;
+    padding-left: 8px;
+    padding-right: 15px;
+    margin-right: 10px;
+    margin-top: 3px;
+    border: 2px solid whitesmoke;
+    border-radius: 0px 17px 17px 0px ;
+    border-left: none;
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+
+}
+
+
+#Main2 {
+    margin-left: 70px; /* Same as the width of the sidenav */
+    margin-top: 15px;
+}
+
+.Main3 {
+    display: flex;
+    border-bottom: 10px solid rgba(139, 139, 139, 0.692);
+}
+
+.Main4 {
+    display: table;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.Main5 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.lower {
+    text-align: right;
+}
+
+.Image {
+    width: 600px;
+    height: 400px;
+}
+
+.type {
+    font-size: 30px;
+    color: rgb(41, 41, 41);
+    margin-top: -50px;
+    padding-bottom: 10px;
+    color:indigo;
+}
+
+.Name {
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+    color:orange;
+    padding-bottom: 10px;
+}
+
+.Description {
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+}
+
+#bookmark_Italy {
+    width: 100px;
+    height: 131.42px;
+    background-color: rgb(41, 41, 41,0.7);
+    margin-top: -131.42px;
+    visibility: visible;
+}
+
+#bookmark_Japan {
+    width: 100px;
+    height: 144.92px;
+    background-color: rgba(41, 41, 41, 0.7);
+    margin-top: -144.92px;
+    visibility: hidden;
+}
+
+#bookmark_French {
+    width: 100px;
+    height: 145px;
+    background-color: rgb(41, 41, 41,0.7);
+    margin-top: -145px;
+    visibility:hidden;
+}

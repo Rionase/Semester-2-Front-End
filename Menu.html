@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Menu</title>
+        <link rel="stylesheet" type="text/css" href="Menu.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body id="body">
+      <ul class="nav justify-content-end Main1">
+          <img src="Image/logo 2.png" id="logo">
+          <div class="nav-link logoname">Royal Trinité</div>
+          <li class="nav-item">
+            <a class="nav-link navtext" href="Welcome Page.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navtext" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navtext" href="Reservation.html">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navtext" href="About Us.html">About Us</a>
+          </li>
+      </ul>
+      <br><br>
+      <div class="sidenav">
+        <div>
+            <button type="button" class="buttonstyle" onmouseenter="TabIn(0)" onmouseleave="TabOut(0)" onclick="Ganti('Italy')">
+              <div class="text1 top">I</div>
+              <div class="text1">T</div>
+              <div class="text1">A</div>
+              <div class="text1">L</div>
+              <div class="text1">I</div>
+              <div class="text1">A</div>
+              <div class="text1 bottom">N</div>
+            </button>
+          </div>
+          <div id="bookmark_Italy"></div>
+          <div>
+            <button type="button" class="buttonstyle" onmouseenter="TabIn(1)" onmouseleave="TabOut(1)" onclick="Ganti('Japanese')">
+                <div class="text1 top">J</div>
+                <div class="text1">A</div>
+                <div class="text1">P</div>
+                <div class="text1">A</div>
+                <div class="text1">N</div>
+                <div class="text1">E</div>
+                <div class="text1">S</div>
+                <div class="text1 bottom">E</div>
+              </button>
+          </div>
+          <div id="bookmark_Japan"></div>
+          <div>
+            <button type="button" class="buttonstyle" onmouseenter="TabIn(2)" onmouseleave="TabOut(2)" onclick="Ganti('French')">
+                <div class="text1 top">&nbsp;</div>
+                <div class="text1">F</div>
+                <div class="text1">R</div>
+                <div class="text1">E</div>
+                <div class="text1">N</div>
+                <div class="text1">C</div>
+                <div class="text1">H</div>
+                <div class="text1 bottom">&nbsp;</div>
+              </button>
+          </div>
+          <div id="bookmark_French"></div>
+      </div>
+
+      <div id="Main2">
+
+          <div class="Main3">
+            <img src="Image/Bevarage_Italy.jpg" class="Image">
+            <div class="Main4">
+              <div class="Main5 upper">
+                <div class="type">Wine Pairing</div>
+                <div class="Name">Crémant de Limoux</div>
+                <div class="Description">
+                  The Crémant Rosé Brut Grande Cuvée 1531 appears in a radiant salmon shade in glass. Vibrant and fresh, it meets the nose elegantly fragrant of white flowers, peaches and bright fruits. Also subtle hints of sweet cherries can be heard.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="Main3">
+            <div class="Main4">
+              <div class="Main5 lower">
+                <div class="type">Appetizer</div>
+                <div class="Name">Crostini</div>
+                <div class="Description">
+                  Crostini are a group of Italian appetizers consisting of small pieces of toasted or grilled bread topped with a variety of flavorful toppings. Crostini are believed to have originated during the Middle Ages, when poor Italian peasants used to eat their food off of bread instead of plates.
+                </div>
+              </div>
+            </div>
+            <img src="Image/Appetizer_Italy.jpg" class="Image">
+          </div>
+
+          <div class="Main3">
+            <img src="Image/Entree_Italy.jpg" class="Image">
+            <div class="Main4">
+              <div class="Main5 upper">
+                <div class="type">Entrée</div>
+                <div class="Name">Tortelli</div>
+                <div class="Description">
+                  Tortelli is a variety of Italian stuffed pasta prepared in a few shapes: square, semicircular, or rounded and twisted. The pasta is popular throughout Italy, especially in Tuscany, Lombardy, and Emilia-Romagna. One of the most famous dishes featuring this pasta variety is called tortelli con zucca, where tortelli are filled with pumpkin, crushed cookies, and parmesan cheese.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="Main3">
+            <div class="Main4">
+              <div class="Main5 lower">
+                <div class="type">Main Course</div>
+                <div class="Name">Coniglio alla griglia</div>
+                <div class="Description">
+                  Coniglio alla griglia is a traditional rabbit dish originating from Italy. Although there are many ways of preparing grilled rabbit, it’s usually made with a combination of rabbit that's cut into pieces, onions, garlic, red wine, rosemary, bay leaves, juniper berries, olive oil, salt, and black pepper
+                </div>
+              </div>
+            </div>
+            <img src="Image/Main_Italy.jpg" class="Image">
+          </div>
+
+          <div class="Main3">
+            <img src="Image/Desert_Italy.jpg" class="Image">
+            <div class="Main4">
+              <div class="Main5 upper">
+                <div class="type">Desert</div>
+                <div class="Name">Tiramisu</div>
+                <div class="Description">
+                  Made with a mixture of whipped egg yolks, mascarpone, sugar, cocoa, and lady fingers dipped in coffee, this specialty graces the dessert menu of practically every Italian restaurant or trattoria. If you like chocolate mousse and coffee, you'll be a fan of the texture and indulgent flavor of this classic dessert.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+      </div>
+
+
+      <script src="Menu.js"></script>
+</html>
